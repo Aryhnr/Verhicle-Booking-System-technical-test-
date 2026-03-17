@@ -51,6 +51,76 @@ Aplikasi pemesanan kendaraan berbasis web untuk perusahaan tambang nikel.
 ![Physical Data Model](public/images/docs/pdm.png)
 
 ---
+
+## Panduan Instalasi
+
+### 1. Clone Proyek
+
+```bash
+git clone <url-repo> vehicle-booking
+cd vehicle-booking
+```
+
+### 2. Install Dependensi
+
+```bash
+composer install
+npm install
+```
+
+### 3. Konfigurasi Environment
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Edit file `.env`:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=vehicle_booking_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+### 4. Migration & Seeder
+
+```bash
+php artisan migrate
+php artisan db:seed
+```
+
+### 5. Export Excel
+
+Laporan periodik dapat diekspor ke `.xlsx` menggunakan `maatwebsite/excel`.
+
+```bash
+composer require maatwebsite/excel
+```
+
+
+
+### 6. Build Asset
+
+```bash
+npm run build
+```
+
+### 7. Jalankan Server
+
+```bash
+php artisan serve
+```
+
+Akses di browser: **http://127.0.0.1:8000**
+
+---
+
+*Vehicle Booking System — Laravel 12 | MySQL 8.0 | Tailwind CSS v4*
+
+---
 ## Halaman Utama Sistem
 
 ### Admin
@@ -142,73 +212,3 @@ Aplikasi pemesanan kendaraan berbasis web untuk perusahaan tambang nikel.
 
 - Route: `/approvals`
 - Approve / Reject pemesanan
-
----
-
-## Panduan Instalasi
-
-### 1. Clone Proyek
-
-```bash
-git clone <url-repo> vehicle-booking
-cd vehicle-booking
-```
-
-### 2. Install Dependensi
-
-```bash
-composer install
-npm install
-```
-
-### 3. Konfigurasi Environment
-
-```bash
-cp .env.example .env
-php artisan key:generate
-```
-
-Edit file `.env`:
-
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=vehicle_booking_db
-DB_USERNAME=root
-DB_PASSWORD=
-```
-### 4. Migration & Seeder
-
-```bash
-php artisan migrate
-php artisan db:seed
-```
-
-### 5. Export Excel
-
-Laporan periodik dapat diekspor ke `.xlsx` menggunakan `maatwebsite/excel`.
-
-```bash
-composer require maatwebsite/excel
-```
-
-
-
-### 6. Build Asset
-
-```bash
-npm run build
-```
-
-### 7. Jalankan Server
-
-```bash
-php artisan serve
-```
-
-Akses di browser: **http://127.0.0.1:8000**
-
----
-
-*Vehicle Booking System — Laravel 12 | MySQL 8.0 | Tailwind CSS v4*
