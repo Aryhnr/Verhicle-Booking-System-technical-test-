@@ -57,7 +57,7 @@ Aplikasi pemesanan kendaraan berbasis web untuk perusahaan tambang nikel.
 ### 1. Clone Proyek
 
 ```bash
-git clone <url-repo> vehicle-booking
+git clone https://github.com/Aryhnr/Verhicle-Booking-System-technical-test-.git vehicle-booking
 cd vehicle-booking
 ```
 
