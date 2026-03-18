@@ -22,9 +22,9 @@ Aplikasi pemesanan kendaraan berbasis web untuk perusahaan tambang nikel.
 
 | Nama | Email | Password | Role | Level |
 |---|---|---|---|---|
-| Administrator | admin@vehicle.app | admin123 | admin | - |
-| Budi Santoso | approver1@vehicle.app | approver123 | approver | 1 |
-| Siti Rahayu | approver2@vehicle.app | approver123 | approver | 2 |
+| Administrator | admin@gmail.com | admin123 | admin | - |
+| Budi Santoso | approver1@gmail.com | approver123 | approver | 1 |
+| Siti Rahayu | approver2@gmail.com | approver123 | approver | 2 |
 
 ---
 
