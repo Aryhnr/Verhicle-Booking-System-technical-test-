@@ -8,10 +8,10 @@ Aplikasi pemesanan kendaraan berbasis web untuk perusahaan tambang nikel.
 
 | Komponen | Versi |
 |---|---|
-| PHP | 8.3+ |
+| PHP | 8.2 |
 | Framework | Laravel 12 |
 | Database | MySQL 8.0+ |
-| CSS Framework | Tailwind CSS v4 |
+| CSS Framework | Tailwind CSS v3 |
 | Node.js | 20+ |
 | Package Manager | Composer 2 + NPM |
 | Export Excel | maatwebsite/excel ^3.1 |
